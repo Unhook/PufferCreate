@@ -12,6 +12,7 @@ global["UNIFY_ORE_GEN"] = true
 // Mod priorities
 global["unifypriorities"] = [
     "thermal",
+    "minecraft",
     "create",
     "mekanism",
     "mysticalworld",
@@ -56,7 +57,8 @@ var tagGen = [
     "iridium=storage_blocks,ingots,nuggets,dusts,ores",
     "zinc=storage_blocks,ingots,nuggets,dusts,ores",
     "osmium=ingots,ores",
-    "constantan=ingots,dusts,storage_blocks,nuggets",
+    "constantan=ingots,dusts,storage_blocks,nuggets,plates",
+    "electrum=ingots,dusts,storage_blocks,nuggets,plates",
     "sulfur=dusts,ores"
 ]
 for (let line of tagGen) {
