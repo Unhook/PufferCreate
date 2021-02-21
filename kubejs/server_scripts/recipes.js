@@ -1,4 +1,5 @@
-//priority: 1501
+//priority: 1500
+
 events.listen('recipes', function (event) {
 
         //Mekanism Steel Casing
