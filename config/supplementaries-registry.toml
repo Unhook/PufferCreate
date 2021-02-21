@@ -10,48 +10,48 @@
 #Enable and disable blocks / entities
 [registration]
 
-	[registration.blocks]
-		planter = true
-		clock_block = true
-		pedestal = true
-		wind_vane = true
-		redstone_illuminator = true
-		notice_board = true
-		crank = true
-		jar = true
-		faucet = true
-		turn_table = true
-		piston_launcher = true
-		speaker_block = true
-		sign_post = true
-		hanging_sign = true
-		bellows = true
-		sconce = true
-		sconce_green = false
-		sconce_ender = true
-		sconce_soul = true
-		candelabra = true
-		cage = true
-		item_shelf = true
-		sconce_lever = true
-		cog_block = true
-		candle_holder = true
-		globe = true
-		hourglass = true
-		sack = true
-		blackboard = true
-		safe = true
-		copper_lantern = true
-		flute = true
-		gold_trapdoor = true
-		gold_door = true
-		bamboo_spikes = true
-		stone_lamp = true
-		#WIP
-		laser_block = false
-		#WIP
-		flag = false
-
 	[registration.entities]
 		firefly = true
+
+	[registration.blocks]
+		clock_block = true
+		pedestal = true
+		blackboard = true
+		sconce_soul = true
+		candle_holder = true
+		speaker_block = true
+		sack = true
+		#WIP
+		flag = false
+		#WIP
+		laser_block = false
+		bellows = true
+		notice_board = true
+		hanging_sign = true
+		redstone_illuminator = true
+		cage = true
+		bamboo_spikes = true
+		planter = true
+		wind_vane = true
+		hourglass = true
+		jar = true
+		sconce_ender = true
+		item_shelf = true
+		turn_table = true
+		faucet = true
+		stone_lamp = true
+		cog_block = true
+		crank = true
+		gold_trapdoor = true
+		copper_lantern = true
+		piston_launcher = true
+		sconce_green = false
+		flute = true
+		globe = true
+		sconce = true
+		candelabra = true
+		gold_door = true
+		safe = true
+		sconce_lever = true
+		sign_post = true
 
