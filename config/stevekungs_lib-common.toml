@@ -1,6 +1,0 @@
-
-#General settings
-[general]
-	#Display debug log, useful to find bugs.
-	enableDebugLog = true
-
