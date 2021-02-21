@@ -30,7 +30,7 @@
 #Configurations related to item selection.
 [itemSelection]
 	#List of mods that are preferred when selecting items in recipes.
-	preferredMods = ["minecraft", "create", "mekanism", "mysticalworld", "immersiveengineering", "iceandfire"]
+	preferredMods = ["thermal", "minecraft", "create", "mekanism", "mysticalworld", "immersiveengineering", "iceandfire"]
 
 #Configurations related to block tags.
 [blockTags]

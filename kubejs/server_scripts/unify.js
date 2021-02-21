@@ -11,6 +11,7 @@ global["UNIFY_ORE_GEN"] = true
 
 // Mod priorities
 global["unifypriorities"] = [
+    "thermal",
     "create",
     "mekanism",
     "mysticalworld",
