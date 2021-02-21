@@ -1,0 +1,638 @@
+{
+	id: 2,
+	filename: "getting_started",
+	order_index: 1,
+	title: "Getting Started",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Get a tree!",
+			x: 0.0d,
+			y: 0.0d,
+			subtitle: "Punch a tree to get wood.",
+			id: 3,
+			tasks: [{
+				id: 16,
+				type: "item",
+				item: "minecraft:oak_log"
+			}],
+			rewards: [{
+				id: 15,
+				type: "item",
+				item: "craftingstation:crafting_station"
+			}]
+		},
+		{
+			title: "Getting a upgrade!",
+			x: 0.0d,
+			y: 2.0d,
+			subtitle: "Make some resistant metal pickaxe.",
+			dependencies: [I;3],
+			id: 5,
+			tasks: [{
+				id: 6,
+				type: "item",
+				item: {
+					id: "minecraft:iron_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Fancy furnace!",
+			icon: "immersiveengineering:coke_oven",
+			x: 0.0d,
+			y: 4.0d,
+			subtitle: "Make a Coke Oven!",
+			dependencies: [I;5],
+			id: 9,
+			tasks: [{
+				id: 10,
+				type: "item",
+				item: "immersiveengineering:cokebrick",
+				count: 27L
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.0d,
+			subtitle: "Make some treated wood to start the Create mod!",
+			dependencies: [I;9],
+			id: 11,
+			tasks: [{
+				id: 12,
+				type: "item",
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 8.0d,
+			dependencies: [I;11],
+			id: 28,
+			tasks: [{
+				id: 29,
+				type: "item",
+				item: "create:andesite_casing"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 6.0d,
+			dependencies: [I;11],
+			id: 32,
+			tasks: [{
+				id: 33,
+				type: "item",
+				item: "immersiveengineering:workbench"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 6.0d,
+			dependencies: [I;
+				56,
+				36,
+				78
+			],
+			id: 34,
+			tasks: [{
+				id: 35,
+				type: "item",
+				item: "immersiveengineering:circuit_board"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 6.0d,
+			dependencies: [I;32],
+			id: 36,
+			tasks: [{
+				id: 37,
+				type: "item",
+				item: "immersiveengineering:electron_tube"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 10.0d,
+			dependencies: [I;28],
+			id: 38,
+			tasks: [{
+				id: 39,
+				type: "dimension",
+				dimension: "minecraft:nether"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 7.5d,
+			dependencies: [I;28],
+			id: 40,
+			tasks: [{
+				id: 41,
+				type: "item",
+				item: "create:mechanical_mixer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 7.0d,
+			dependencies: [I;28],
+			id: 42,
+			tasks: [{
+				id: 43,
+				type: "item",
+				item: "create:shaft"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 9.0d,
+			dependencies: [I;28],
+			id: 44,
+			tasks: [{
+				id: 45,
+				type: "item",
+				item: "create:cogwheel"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 8.0d,
+			dependencies: [I;28],
+			id: 46,
+			tasks: [{
+				id: 47,
+				type: "item",
+				item: "create:water_wheel"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 8.5d,
+			dependencies: [I;28],
+			id: 48,
+			tasks: [{
+				id: 49,
+				type: "item",
+				item: "create:basin"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 10.0d,
+			dependencies: [I;38],
+			id: 50,
+			tasks: [{
+				id: 51,
+				type: "item",
+				item: "create:blaze_burner"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 9.0d,
+			dependencies: [I;
+				40,
+				48,
+				50
+			],
+			id: 52,
+			tasks: [{
+				id: 53,
+				type: "item",
+				item: "create:brass_ingot"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 4.0d,
+			dependencies: [I;9],
+			id: 54,
+			tasks: [{
+				id: 55,
+				type: "item",
+				item: "immersiveengineering:alloybrick"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 4.0d,
+			dependencies: [I;54],
+			id: 56,
+			tasks: [{
+				id: 57,
+				type: "item",
+				item: "immersiveengineering:ingot_constantan"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 7.0d,
+			dependencies: [I;
+				28,
+				52
+			],
+			id: 58,
+			tasks: [{
+				id: 59,
+				type: "item",
+				item: "create:mechanical_press"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 7.0d,
+			dependencies: [I;58],
+			id: 60,
+			tasks: [{
+				id: 61,
+				type: "item",
+				item: "create:brass_sheet"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 7.0d,
+			dependencies: [I;
+				60,
+				34,
+				92
+			],
+			id: 62,
+			tasks: [{
+				id: 63,
+				type: "item",
+				item: "create:integrated_circuit"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 4.5d,
+			dependencies: [I;
+				62,
+				68,
+				74
+			],
+			id: 64,
+			tasks: [{
+				id: 65,
+				type: "item",
+				item: "immersiveengineering:cloche"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 2.0d,
+			dependencies: [I;5],
+			id: 66,
+			tasks: [{
+				id: 67,
+				type: "item",
+				item: "mekanism:metallurgic_infuser"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 2.0d,
+			dependencies: [I;66],
+			id: 68,
+			tasks: [{
+				id: 69,
+				type: "item",
+				item: "mekanism:ingot_steel"
+			}]
+		},
+		{
+			x: 15.5d,
+			y: 8.0d,
+			dependencies: [I;
+				72,
+				74,
+				60,
+				34
+			],
+			id: 70,
+			tasks: [{
+				id: 71,
+				type: "item",
+				item: "mekanism:steel_casing"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 5.5d,
+			dependencies: [I;68],
+			id: 72,
+			tasks: [{
+				id: 73,
+				type: "item",
+				item: "immersiveengineering:steel_scaffolding_standard"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 3.5d,
+			dependencies: [I;68],
+			id: 74,
+			tasks: [{
+				id: 75,
+				type: "item",
+				item: "immersiveengineering:component_steel"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 11.5d,
+			dependencies: [I;
+				70,
+				82
+			],
+			id: 76,
+			tasks: [{
+				id: 77,
+				type: "item",
+				item: "mekanism:energized_smelter"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 5.0d,
+			dependencies: [I;32],
+			id: 78,
+			tasks: [{
+				id: 79,
+				type: "item",
+				item: "immersiveengineering:insulating_glass"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: 11.5d,
+			dependencies: [I;
+				62,
+				82,
+				36,
+				70
+			],
+			id: 80,
+			tasks: [{
+				id: 81,
+				type: "item",
+				item: "mekanism:enrichment_chamber"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 10.5d,
+			dependencies: [I;78],
+			id: 82,
+			tasks: [{
+				id: 83,
+				type: "item",
+				item: "mekanism:basic_control_circuit"
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 10.5d,
+			dependencies: [I;82],
+			id: 84,
+			tasks: [{
+				id: 85,
+				type: "item",
+				item: "mekanism:advanced_control_circuit"
+			}]
+		},
+		{
+			x: 18.5d,
+			y: 10.5d,
+			dependencies: [I;84],
+			id: 86,
+			tasks: [{
+				id: 87,
+				type: "item",
+				item: "mekanism:elite_control_circuit"
+			}]
+		},
+		{
+			x: 23.5d,
+			y: 10.5d,
+			dependencies: [I;86],
+			id: 88,
+			tasks: [{
+				id: 89,
+				type: "item",
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 12.5d,
+			dependencies: [I;92],
+			id: 90,
+			tasks: [{
+				id: 91,
+				type: "item",
+				item: "create:crushing_wheel"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 11.5d,
+			dependencies: [I;94],
+			id: 92,
+			tasks: [{
+				id: 93,
+				type: "item",
+				item: "create:mechanical_crafter"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 10.5d,
+			dependencies: [I;52],
+			id: 94,
+			tasks: [{
+				id: 95,
+				type: "item",
+				item: "create:brass_casing"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 11.5d,
+			dependencies: [I;
+				82,
+				90
+			],
+			id: 96,
+			tasks: [{
+				id: 97,
+				type: "item",
+				item: "mekanism:crusher"
+			}]
+		},
+		{
+			x: 11.5d,
+			y: 11.5d,
+			dependencies: [I;
+				82,
+				100
+			],
+			id: 98,
+			tasks: [{
+				id: 99,
+				type: "item",
+				item: "mekanism:precision_sawmill"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 8.0d,
+			dependencies: [I;58],
+			id: 100,
+			tasks: [{
+				id: 101,
+				type: "item",
+				item: "create:mechanical_saw"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 11.5d,
+			dependencies: [I;84],
+			id: 102,
+			tasks: [{
+				id: 103,
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			x: 13.0d,
+			y: 11.5d,
+			dependencies: [I;84],
+			id: 104,
+			tasks: [{
+				id: 105,
+				type: "item",
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		},
+		{
+			x: 15.0d,
+			y: 11.5d,
+			dependencies: [I;84],
+			id: 106,
+			tasks: [{
+				id: 107,
+				type: "item",
+				item: "mekanism:rotary_condensentrator"
+			}]
+		},
+		{
+			x: 22.5d,
+			y: 11.5d,
+			dependencies: [I;88],
+			id: 108,
+			tasks: [{
+				id: 109,
+				type: "item",
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		},
+		{
+			x: 23.5d,
+			y: 11.5d,
+			dependencies: [I;88],
+			id: 110,
+			tasks: [{
+				id: 111,
+				type: "item",
+				item: "mekanism:chemical_crystallizer"
+			}]
+		},
+		{
+			x: 21.5d,
+			y: 11.5d,
+			dependencies: [I;88],
+			id: 112,
+			tasks: [{
+				id: 113,
+				type: "item",
+				item: "mekanism:chemical_washer"
+			}]
+		},
+		{
+			x: 24.5d,
+			y: 11.5d,
+			dependencies: [I;88],
+			id: 114,
+			tasks: [{
+				id: 115,
+				type: "item",
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 11.5d,
+			dependencies: [I;82],
+			id: 116,
+			tasks: [{
+				id: 117,
+				type: "item",
+				item: "mekanism:nutritional_liquifier"
+			}]
+		},
+		{
+			x: 16.0d,
+			y: 11.5d,
+			dependencies: [I;84],
+			id: 118,
+			tasks: [{
+				id: 119,
+				type: "item",
+				item: "mekanism:purification_chamber"
+			}]
+		},
+		{
+			x: 18.5d,
+			y: 11.5d,
+			dependencies: [I;86],
+			id: 120,
+			tasks: [{
+				id: 121,
+				type: "item",
+				item: "mekanism:chemical_injection_chamber"
+			}]
+		},
+		{
+			x: 17.5d,
+			y: 11.5d,
+			dependencies: [I;86],
+			id: 122,
+			tasks: [{
+				id: 123,
+				type: "item",
+				item: "mekanism:combiner"
+			}]
+		},
+		{
+			x: 25.5d,
+			y: 11.5d,
+			dependencies: [I;88],
+			id: 124,
+			tasks: [{
+				id: 125,
+				type: "item",
+				item: "mekanism:digital_miner"
+			}]
+		}
+	]
+}
