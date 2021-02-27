@@ -12,7 +12,6 @@ global["UNIFY_ORE_GEN"] = true
 // Mod priorities
 global["unifypriorities"] = [
     "thermal",
-    "minecraft",
     "create",
     "mekanism",
     "mysticalworld",
@@ -124,27 +123,6 @@ onEvent("player.inventory.changed", event => {
                     event.getEntity().inventory.set(slot, Item.of(tItem, heldItem.getCount()))
                 }
                 break
-            }
-        }
-    }
-})
-
-// Items on ground
-onEvent("entity.spawned", event => {
-    if (global["ITEM_UNIFY"]) {
-        var entity = event.getEntity()
-        if (entity.getType() == "minecraft:item") {
-            var gItem = entity.getItem()
-            // Check for every tag in the list
-            for (let tag of global["unifytags"]) {
-                if (Ingredient.of("#"+tag).test(gItem)) {
-                    // If item is in tag, determine if it needs to be changed
-                    let tItem = global["tagitems"][tag]
-                    if (tItem != gItem.getId()) {
-                        entity.setItem(Item.of(tItem, gItem.getCount()))
-                    }
-                    break
-                }
             }
         }
     }

@@ -6,6 +6,13 @@
         "negate": false,
         "value": "minecraft:warped_forest"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "byg:crimson_garden"
+      }
     ]
   ]
 }

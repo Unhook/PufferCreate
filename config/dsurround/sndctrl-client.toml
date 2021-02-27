@@ -3,7 +3,7 @@
 ["Sound Options"]
 	#Ticks between culled sound events (0 to disable culling)
 	#Range: 0 ~ 6000
-	"Sound Culling Interval" = 10
+	"Sound Culling Interval" = 20
 	#Enable sound reverb and filtering
 	"Enable Enhanced Sounds" = true
 	#Occlude WEATHER sounds
