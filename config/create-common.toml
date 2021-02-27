@@ -23,7 +23,7 @@
 			maxHeight = 86
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
 			clusterSize = 18
@@ -125,7 +125,7 @@
 			maxHeight = 55
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
 			clusterSize = 15
