@@ -4,7 +4,6 @@
 /config.json
 /craftpresence
 /crash-reports
-/defaultconfigs
 /dumps
 /indicatia
 /local
@@ -26,3 +25,7 @@
 /usercache.json
 /usernamecache.json
 /hotbar.nbt
+/optionsshaders.txt
+/servers.dat
+/ESM
+/servers.dat_old
