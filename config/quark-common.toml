@@ -36,7 +36,7 @@
 
 [automation]
 	Chute = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	"Weather Sensor" = true
 	"Ender Watcher" = true
 	"Endermites Form Shulkers" = true
@@ -346,7 +346,7 @@
 	"Pat The Dogs" = true
 	"Enhanced Ladders" = true
 	"Snow Golem Player Heads" = true
-	"Glass Shard" = true
+	"Glass Shard" = false
 	"Campfires Boost Elytra" = true
 
 	[tweaks.sign_editing]
@@ -471,10 +471,10 @@
 	"Fairy Rings" = true
 	"Chorus Vegetation" = true
 	Crevices = true
-	"Nether Obsidian Spikes" = true
+	"Nether Obsidian Spikes" = false
 	"Mega Caves" = true
 	"Realistic World Gen" = true
-	Biotite = true
+	Biotite = false
 	"Big Stone Clusters" = true
 	"Brimstone Underground Biome" = true
 	"Cave Crystal Underground Biome" = true
@@ -1437,11 +1437,11 @@
 [mobs]
 	Frogs = true
 	Crabs = true
-	Stonelings = true
+	Stonelings = false
 	Foxhound = true
 	Forgotten = true
 	Wraith = true
-	Toretoise = true
+	Toretoise = false
 
 	[mobs.toretoise]
 		"Max Y Level" = 32
